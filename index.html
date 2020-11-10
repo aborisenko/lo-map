@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Карта Ленинградской области</title>
 	<style type="text/css">
+		.map{
+			margin:0 auto;
+			display: block;
+		}
+
 		.group:hover{
 			cursor: pointer;
 		}
@@ -15,7 +20,7 @@
 			stroke-width: 2px;
 			stroke:#ff0000;
 		}
-		.default-title { 
+		.group-title { 
 			fill:#000000;
 			fill-opacity:1;
 			font-family:sans-serif;
@@ -36,17 +41,10 @@
 			stroke-opacity:1;    
 			stroke-width:1px; 
 		}
-		/* .default-fill:hover{
-			fill: #f6a9aaff;
-		}
-		.default-stroke:hover{
-			stroke-width: 2px;
-			stroke:#ff0000;
-		} */
 	</style>
 </head>
 <body>
-	<svg style="width:1200px;height:849px;">
+	<svg class="map" viewBox="0 0 1200 849" width="75%">
 		<use xlink:href="lo-map.min.svg#svg236"></use>
 	</svg>
 </body>
